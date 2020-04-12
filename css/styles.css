@@ -1,0 +1,54 @@
+body {
+  width: 900px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+/* UL */
+.site-navigation {
+  width: 570px;
+  font-size: 14px;
+  line-height: 24px;
+  list-style: none;
+}
+/*  ссылка в UL */
+.site-navigation a {
+  color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.list :hover {
+  color: lightblue;
+}
+
+.list {
+  display: inline-block;
+}
+
+/* Картинка */
+.under-img {
+  color: #626262;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+img {
+  display: block;
+}
+/* Секции */
+.posts {
+  display: inline-block;
+}
+/* Титл поста */
+.post-title {
+  font-size: 30px;
+}
+/* Кнопка */
+button {
+  display: inline-block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
