@@ -1,24 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  width: 900px;
   font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 24px;
   color: #626262;
 }
-/* UL */
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .site-navigation {
-  width: 570px;
   font-size: 14px;
   line-height: 24px;
   list-style: none;
+  margin-bottom: 100px;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
 }
-/*  ссылка в UL */
+
 .site-navigation a {
   color: #626262;
   text-decoration: none;
   text-transform: uppercase;
 }
-.list :hover {
+
+.site-navigation li:not(last-child) {
+  margin-right: 100px;
+}
+
+.list :hover,
+.list :focus {
   color: lightblue;
 }
 
@@ -26,29 +49,53 @@ body {
   display: inline-block;
 }
 
-/* Картинка */
 .under-img {
   color: #626262;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
-/* Секции */
-.posts {
-  display: inline-block;
-}
-/* Титл поста */
+
 .post-title {
   font-size: 30px;
+  margin-bottom: 40px;
 }
-/* Кнопка */
-button {
+
+.posts {
   display: inline-block;
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 50%;
+  width: 420px;
+  margin-right: 30px;
+  margin-bottom: 136px;
+  font-size: 0;
+}
+
+.posts:nth-child(2n) {
+  margin-right: 0;
+}
+.posts:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+.load-more-button {
+  border-color: #626262;
+  background-color: #ffffff;
+  color: #626262;
+  padding: 22px 34px;
+  display: inline-block;
+  margin: 56px 360px 70px 360px;
   text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
 }
