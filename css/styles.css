@@ -15,17 +15,18 @@ body {
   color: #626262;
 }
 
-.wrapper {
+main {
   width: 900px;
   margin: 0 auto;
+  font-size: 0;
 }
 
 .site-navigation {
   font-size: 14px;
   line-height: 24px;
   list-style: none;
-  margin-bottom: 100px;
-  padding: 0;
+  padding: 76px 0 100px 0;
+  margin-bottom: 0;
   vertical-align: middle;
   text-align: center;
 }
@@ -36,7 +37,7 @@ body {
   text-transform: uppercase;
 }
 
-.site-navigation li:not(last-child) {
+.site-navigation li:not(:last-child) {
   margin-right: 100px;
 }
 
@@ -50,10 +51,11 @@ body {
 }
 
 .under-img {
-  color: #626262;
+  color: #b4ad9e;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Ubuntu Condensed", sans-serif;
   margin-bottom: 30px;
 }
 img {
@@ -73,12 +75,12 @@ img {
   width: 420px;
   margin-right: 30px;
   margin-bottom: 136px;
-  font-size: 0;
 }
 
 .posts:nth-child(2n) {
   margin-right: 0;
 }
+
 .posts:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
